@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutAttendanceRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:minHeight="56dp"
+        android:background="?android:attr/colorBackground"
+        app:title="Daily Attendance"
+        app:titleTextColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- Session Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardSession"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="24dp"
+        app:cardBackgroundColor="?attr/colorSurface"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp">
+            
+            <!-- Session Info Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tvSessionLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Today's Session"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvSessionLive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text=" LIVE "
+                    android:background="@drawable/live_badge"
+                    android:textColor="?attr/colorSecondary"
+                    android:textSize="12sp"
+                    android:layout_marginStart="6dp"/>
+                    
+                <TextView
+                    android:id="@+id/tvSessionDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:textSize="13sp"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"/>
+                
+                <!-- Progress Circular Visual -->
+                <FrameLayout
+                    android:layout_width="56dp"
+                    android:layout_height="56dp">
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:max="100"
+                        android:progress="0"
+                        android:indeterminate="false"
+                        android:progressDrawable="@drawable/circular_progress_drawable"/>
+                    <TextView
+                        android:id="@+id/tvProgressPercent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="?attr/colorOnSurfaceVariant"
+                        android:textSize="13sp"
+                        android:text="0%"/>
+                </FrameLayout>
+            </LinearLayout>
+
+            <!-- Studied & Goal Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:background="?attr/colorSurfaceVariant"
+                android:padding="16dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Studied"
+                        android:textColor="?attr/colorOnSurface"
+                        android:textSize="13sp"/>
+                    <TextView
+                        android:id="@+id/tvStudiedTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0 h 0 m"
+                        android:textColor="?attr/colorOnSurface"
+                        android:textSize="19sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="32dp"
+                    android:background="?attr/colorOutline"
+                    android:layout_marginHorizontal="16dp"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Goal"
+                        android:textStyle="bold"
+                        android:textColor="?attr/colorOnSurface"
+                        android:textSize="13sp"
+                        />
+                    <TextView
+                        android:id="@+id/tvGoalTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1h 00m"
+                        android:textColor="?attr/colorOnSurface"
+                        android:textSize="19sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Check In/Out Button -->
+            <Button
+                android:id="@+id/btnCheckInOut"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="18dp"
+                android:text="Check In"
+                android:textColor="?attr/colorOnPrimary"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:background="@drawable/rounded_button_background"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Today Progress Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardTodayProgress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="24dp"
+        app:cardBackgroundColor="?attr/colorSurface"
+        app:layout_constraintTop_toBottomOf="@id/cardSession"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:id="@+id/tvTodayProgressTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today Progress"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?attr/colorSurfaceVariant"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Studied"
+                        android:textColor="?attr/colorOnSurfaceVariant"
+                        android:textSize="13sp"/>
+                    <TextView
+                        android:id="@+id/tvTodayStudied"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00h 00m"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?attr/colorSurfaceVariant"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Goal"
+                        android:textColor="?attr/colorOnSurfaceVariant"
+                        android:textSize="13sp"/>
+                    <TextView
+                        android:id="@+id/tvTodayGoal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00h 00m"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

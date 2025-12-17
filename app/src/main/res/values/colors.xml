@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Light Theme Colors (Dashboard Style) -->
+    <color name="light_background">#F9FAFB</color>
+    <color name="light_surface">#FFFFFF</color>
+    <color name="light_on_background">#000000</color>
+    <color name="light_on_surface">#000000</color>
+    <color name="light_on_surface_variant">#555555</color>
+    <color name="light_outline">#E5E7EB</color>
+    <color name="light_primary">#00BFA6</color>
+    <color name="light_secondary">#6A81FF</color>
+    <color name="light_card_background">#FFFFFF</color>
+    <color name="light_text_primary">#000000</color>
+    <color name="light_text_secondary">#555555</color>
+    <color name="light_text_tertiary">#888888</color>
+    
+    <!-- Dark Theme Colors (Focus Timer/Attendance Style) -->
+    <color name="dark_background">#151730</color>
+    <color name="dark_surface">#191B30</color>
+    <color name="dark_on_background">#FFFFFF</color>
+    <color name="dark_on_surface">#FFFFFF</color>
+    <color name="dark_on_surface_variant">#B5B8DE</color>
+    <color name="dark_outline">#23264A</color>
+    <color name="dark_primary">#6A81FF</color>
+    <color name="dark_secondary">#00BFA6</color>
+    <color name="dark_card_background">#191B30</color>
+    <color name="dark_text_primary">#FFFFFF</color>
+    <color name="dark_text_secondary">#B5B8DE</color>
+    <color name="dark_text_tertiary">#C0C3F5</color>
+    
+    <!-- Common Colors -->
+    <color name="accent_green">#00BFA6</color>
+    <color name="accent_blue">#6A81FF</color>
+    <color name="accent_red">#FF5252</color>
+    <color name="accent_orange">#FF9800</color>
+</resources>

@@ -1,0 +1,82 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Light Theme (Dashboard Style) -->
+    <style name="Theme.Mad_theory.Light" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/light_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/light_primary</item>
+        <item name="colorOnPrimaryContainer">@color/white</item>
+        
+        <item name="colorSecondary">@color/light_secondary</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/light_secondary</item>
+        <item name="colorOnSecondaryContainer">@color/white</item>
+        
+        <item name="colorSurface">@color/light_surface</item>
+        <item name="colorOnSurface">@color/light_on_surface</item>
+        <item name="colorSurfaceVariant">@color/light_surface</item>
+        <item name="colorOnSurfaceVariant">@color/light_on_surface_variant</item>
+        
+        <item name="android:colorBackground">@color/light_background</item>
+        <item name="colorOnBackground">@color/light_on_background</item>
+        
+        <item name="colorOutline">@color/light_outline</item>
+        
+        <item name="android:statusBarColor">@color/light_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- Dark Theme (Focus Timer/Attendance Style) -->
+    <style name="Theme.Mad_theory.Dark" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/dark_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/dark_primary</item>
+        <item name="colorOnPrimaryContainer">@color/white</item>
+        
+        <item name="colorSecondary">@color/dark_secondary</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/dark_secondary</item>
+        <item name="colorOnSecondaryContainer">@color/white</item>
+        
+        <item name="colorSurface">@color/dark_surface</item>
+        <item name="colorOnSurface">@color/dark_on_surface</item>
+        <item name="colorSurfaceVariant">@color/dark_surface</item>
+        <item name="colorOnSurfaceVariant">@color/dark_on_surface_variant</item>
+        
+        <item name="android:colorBackground">@color/dark_background</item>
+        <item name="colorOnBackground">@color/dark_on_background</item>
+        
+        <item name="colorOutline">@color/dark_outline</item>
+        
+        <item name="android:statusBarColor">@color/dark_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <!-- Base application theme -->
+    <style name="Base.Theme.Mad_theory" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Default to light theme -->
+        <item name="colorPrimary">@color/light_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/light_primary</item>
+        <item name="colorOnPrimaryContainer">@color/white</item>
+        
+        <item name="colorSecondary">@color/light_secondary</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/light_secondary</item>
+        <item name="colorOnSecondaryContainer">@color/white</item>
+        
+        <item name="colorSurface">@color/light_surface</item>
+        <item name="colorOnSurface">@color/light_on_surface</item>
+        <item name="colorSurfaceVariant">@color/light_surface</item>
+        <item name="colorOnSurfaceVariant">@color/light_on_surface_variant</item>
+        
+        <item name="android:colorBackground">@color/light_background</item>
+        <item name="colorOnBackground">@color/light_on_background</item>
+        
+        <item name="colorOutline">@color/light_outline</item>
+        
+        <item name="android:statusBarColor">@color/light_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Theme.Mad_theory" parent="Base.Theme.Mad_theory" />
+</resources>

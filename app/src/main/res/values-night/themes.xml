@@ -1,0 +1,4 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Night theme inherits from dark theme -->
+    <style name="Base.Theme.Mad_theory" parent="Theme.Mad_theory.Dark" />
+</resources>

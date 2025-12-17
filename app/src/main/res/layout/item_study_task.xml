@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:padding="16dp"
+    android:background="?attr/colorSurface"
+    android:foreground="?attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="02:01 PM - 03:01 PM"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mathematics"
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="16sp"
+        android:layout_below="@id/textTime"
+        android:layout_marginTop="3dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textTarget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Target: 1 h 0 min"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        android:textSize="12sp"
+        android:layout_below="@id/textSubject"
+        android:layout_marginTop="3dp" />
+
+    <TextView
+        android:id="@+id/textStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pending"
+        android:textColor="@color/accent_red"
+        android:textSize="12sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="2dp"/>
+
+    <!-- Three dot menu -->
+    <ImageView
+        android:id="@+id/menuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_more"
+        android:tint="?attr/colorOnSurfaceVariant"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="12dp"/>
+</RelativeLayout>

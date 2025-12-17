@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">StudySprint</string>
+    <!-- Set this to your hosted privacy policy URL -->
+    <string name="privacy_policy_url"> https://rizwanmallick.github.io/Study-sprint-privacy-policy/</string>
+</resources>
