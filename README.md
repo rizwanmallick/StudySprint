@@ -45,6 +45,18 @@ StudySprint is an Android app that helps students plan daily study sessions, sta
    - Open the project folder in Android Studio.
    - Let Gradle sync.
    - Run the `app` configuration on a device/emulator (Android 10+ recommended).
+  
+4. Screenshots
+   ![Sign up/sign in page](app_screenshot/WhatsApp Image 2026-05-09 at 7.06.55 PM.jpeg)
+   ![Dashboard](app_screenshot/WhatsApp Image 2026-05-09 at 7.06.55 PM (1).jpeg)
+   ![Setting](app_screenshot/WhatsApp Image 2026-05-09 at 7.06.55 PM (2).jpeg)
+   ![Progress Page](app_screenshot/WhatsApp Image 2026-05-09 at 7.06.56 PM (1).jpeg)
+   ![Focus Timer Page](app_screenshot/WhatsApp Image 2026-05-09 at 7.06.56 PM (2).jpeg)
+   ![Reminder page](app_screenshot/WhatsApp Image 2026-05-09 at 7.06.56 PM.jpeg)
+   ![Attendance page](app_screenshot/WhatsApp Image 2026-05-09 at 7.06.57 PM (1).jpeg)
+   ![Task Planning page](app_screenshot/WhatsApp Image 2026-05-09 at 7.06.57 PM (2).jpeg)
+   ![Task Page](app_screenshot/WhatsApp Image 2026-05-09 at 7.06.57 PM.jpeg)
+   
 
 ### Project Structure (high‑level)
 
