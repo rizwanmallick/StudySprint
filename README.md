@@ -47,15 +47,26 @@ StudySprint is an Android app that helps students plan daily study sessions, sta
    - Run the `app` configuration on a device/emulator (Android 10+ recommended).
   
 4. Screenshots
-   ![Sign up/sign in page](app_screenshot/Signup_Signin.jpeg)
-   ![Dashboard](app_screenshot/dashboard.jpeg)
-   ![Setting](app_screenshot/Settings.jpeg)
-   ![Progress Page](app_screenshot/Progress.jpeg)
-   ![Focus Timer Page](app_screenshot/Focus_Timer.jpeg)
-   ![Reminder page](app_screenshot/Reminders.jpeg)
-   ![Attendance page](app_screenshot/Attendance.jpeg)
-   ![Task Planning page](app_screenshot/Add_task.jpeg)
-   ![Task Page](app_screenshot/Study_plan.jpeg)
+   <h3 align="center">📸 App Screenshots</h3>
+
+<p align="center">
+  <img src="app_screenshot/Signup_Signin.jpeg" alt="Sign up/sign in page" width="300"/>
+  <img src="app_screenshot/dashboard.jpeg" alt="Dashboard" width="300"/>
+  <img src="app_screenshot/Settings.jpeg" alt="Settings" width="300"/>
+</p>
+
+<p align="center">
+  <img src="app_screenshot/Progress.jpeg" alt="Progress Page" width="300"/>
+  <img src="app_screenshot/Focus_Timer.jpeg" alt="Focus Timer Page" width="300"/>
+  <img src="app_screenshot/Reminders.jpeg" alt="Reminder page" width="300"/>
+</p>
+
+<p align="center">
+  <img src="app_screenshot/Attendance.jpeg" alt="Attendance page" width="300"/>
+  <img src="app_screenshot/Add_task.jpeg" alt="Task Planning page" width="300"/>
+  <img src="app_screenshot/Study_plan.jpeg" alt="Task Page" width="300"/>
+</p>
+
    
 
 ### Project Structure (high‑level)
